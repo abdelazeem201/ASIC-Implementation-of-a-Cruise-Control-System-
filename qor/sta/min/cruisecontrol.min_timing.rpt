@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-nworst 40
+	-slack_lesser_than 0.0000
+	-max_paths 40
+Design : cruisecontrol
+Version: G-2012.06-SP2
+Date   : Wed Dec 20 08:26:31 2017
+****************************************
+
+
+  Startpoint: speed_reg_5_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cruisespeed_reg_5_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  speed_reg_5_/CK (DFF_X1)               0.0000     0.0000 r
+  speed_reg_5_/QN (DFF_X1)               0.0790 &   0.0790 r
+  U226/ZN (OAI211_X1)                    0.0902 &   0.1692 f
+  U25/Z (BUF_X32)                        0.0454 &   0.2146 f
+  U23/ZN (INV_X1)                        0.0102 &   0.2248 r
+  U22/Z (CLKBUF_X1)                      0.1132 &   0.3380 r
+  U24/ZN (INV_X32)                       0.0143 &   0.3523 f
+  cruisespeed_reg_5_/D (DFF_X1)          0.0000 &   0.3523 f
+  data arrival time                                 0.3523
+
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  clock uncertainty                      0.3500     0.3500
+  cruisespeed_reg_5_/CK (DFF_X1)                    0.3500 r
+  library hold time                      0.0056     0.3556
+  data required time                                0.3556
+  ---------------------------------------------------------------
+  data required time                                0.3556
+  data arrival time                                -0.3523
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                 -0.0032
+
+
+1
