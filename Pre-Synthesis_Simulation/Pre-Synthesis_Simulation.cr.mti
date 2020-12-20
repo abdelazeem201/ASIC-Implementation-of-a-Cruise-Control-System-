@@ -1,0 +1,16 @@
+F:/Abdelazeem/GP/Design-and-Implementation-of-a-Cruise-Control-System/cruisecontrol.v {2 {vlog -work work -vopt -stats=none F:/Abdelazeem/GP/Design-and-Implementation-of-a-Cruise-Control-System/cruisecontrol.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module cruisecontrol
+** Warning: F:/Abdelazeem/GP/Design-and-Implementation-of-a-Cruise-Control-System/cruisecontrol.v(74): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	cruisecontrol
+
+} {} {}} F:/Abdelazeem/GP/Design-and-Implementation-of-a-Cruise-Control-System/cruisecontrol_tb.v {1 {vlog -work work -vopt -stats=none F:/Abdelazeem/GP/Design-and-Implementation-of-a-Cruise-Control-System/cruisecontrol_tb.v
+Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+-- Compiling module cruisecontrol_tb
+
+Top level modules:
+	cruisecontrol_tb
+
+} {} {}}
