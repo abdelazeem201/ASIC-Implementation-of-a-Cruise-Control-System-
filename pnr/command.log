@@ -1,0 +1,33 @@
+#@ # 
+#@ # Running icc_shell Version G-2012.06-ICC-SP2 for amd64 -- Aug 24, 2012
+#@ # Date:   Wed Dec 20 08:14:21 2017
+#@ # Run by: ahesham@192.168.64.136
+#@ 
+
+set design cruisecontrol
+set sc_dir "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12"
+set_app_var search_path "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM  /home/mohamed/Desktop/johnson/rtl"
+set_app_var link_library "* NangateOpenCellLibrary_ss0p95vn40c.db"
+set_app_var target_library "NangateOpenCellLibrary_ss0p95vn40c.db"
+set tlupmax "$sc_dir/tech/rcxt/FreePDK45_10m_Cmax.tlup"
+set tlupmin "$sc_dir/tech/rcxt/FreePDK45_10m_Cmin.tlup"
+set tech2itf "$sc_dir/tech/rcxt/FreePDK45_10m.map"
+set_tlu_plus_files -max_tluplus $tlupmax                    -min_tluplus $tlupmin         -tech2itf_map $tech2itf
+open_mw_lib cruisecontrol
+open_mw_cel cruisecontrol_6_routed
+source  ../syn/cons/cons.tcl
+#@ # -- Starting source ../syn/cons/cons.tcl
+
+#@ create_clock -name clk -period 4 -waveform {0 2} [get_ports clk]
+#@ # GUI Debug: Building dc from empty. -- Time: 188ms
+
+#@ set_input_delay -max 2 -clock [get_clocks clk] [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_output_delay -max 2 -clock [get_clocks clk] [all_outputs]
+#@ set_clock_uncertainty 0.35 [get_clocks]
+#@ set_false_path -hold -from [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_false_path -hold -to [all_outputs]
+#@ 
+#@ # -- End source ../syn/cons/cons.tcl
+
+set_propagated_clock [get_clocks clk]
+exit
