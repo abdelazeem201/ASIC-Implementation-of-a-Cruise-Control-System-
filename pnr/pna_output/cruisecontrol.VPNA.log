@@ -1,0 +1,47 @@
+
+Name of design : cruisecontrol
+Number of cell instances in the design : 241
+Number of cell instance masters in the library : 24
+
+Processing power net VSS ...
+Number of power net wires : 1289
+Number of vias : 4220
+Average power dissipation in cruisecontrol :   250.00 mW
+Power supply voltage :     1.20 V
+Assigning vias begins
+Assigning power net wires ...
+Constructing virtual grid ..
+Performing virtual connection ...
+Reading virtual power pads
+Extracting power net VSS ...
+Number of power pad nodes connecting to power net VSS : 4
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Number of resistors in VSS : 13147
+Number of nodes in VSS : 11064
+Performing network simulation
+Assigning netlists to simulation engine begins
+Assigning netlists to simulation engine finished
+Maximum IR drop in cruisecontrol : 57.02 mV
+Maximum current in cruisecontrol : 59.245 mA
+
+Processing power net VDD ...
+Number of power net wires : 1337
+Number of vias : 4928
+Average power dissipation in cruisecontrol :   250.00 mW
+Power supply voltage :     1.20 V
+Assigning vias begins
+Assigning power net wires ...
+Constructing virtual grid ..
+Performing virtual connection ...
+Reading virtual power pads
+Extracting power net VDD ...
+Number of power pad nodes connecting to power net VDD : 4
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Number of resistors in VDD : 17232
+Number of nodes in VDD : 14231
+Performing network simulation
+Assigning netlists to simulation engine begins
+Assigning netlists to simulation engine finished
+Maximum IR drop in cruisecontrol : 50.44 mV
+Maximum current in cruisecontrol : 57.521 mA
+Overall takes     0.20 seconds
