@@ -1,0 +1,64 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-F SUMMARY REPORT
+===
+Execution Date/Time:          Wed Dec 20 08:53:53 2017
+Calibre Version:              v2011.2_34.26    Wed Jul 6 05:20:56 PDT 2011
+Rule File Pathname:           calibreLVS.rul
+Rule File Title:              LVS Rule File for FreePDK45
+Layout System:                GDSII
+Layout Path(s):               ../../pnr/output/cruisecontrol.gds
+Layout Primary Cell:          cruisecontrol
+Current Directory:            /home/ahesham/Desktop/Abdelazeem/Design-and-Implementation-of-a-Cruise-Control-System/pvr/lvs
+User Name:                    ahesham
+Maximum Results/ERC Check:    1000
+Maximum ERC Result Vertices:  4096
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          erc_sum.rep (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = NO  ANGLED = NO  OFFGRID = NO
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+Layers:                       MEMORY-BASED
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER pimplant ... TOTAL Original Geometry Count = 0
+LAYER active ..... TOTAL Original Geometry Count = 0
+LAYER nimplant ... TOTAL Original Geometry Count = 0
+LAYER poly ....... TOTAL Original Geometry Count = 0
+LAYER vth ........ TOTAL Original Geometry Count = 0
+LAYER vtg ........ TOTAL Original Geometry Count = 0
+LAYER thkox ...... TOTAL Original Geometry Count = 0
+LAYER pwell ...... TOTAL Original Geometry Count = 0
+LAYER nwell ...... TOTAL Original Geometry Count = 0
+LAYER via1 ....... TOTAL Original Geometry Count = 3855
+LAYER metal2 ..... TOTAL Original Geometry Count = 8020
+LAYER metal1 ..... TOTAL Original Geometry Count = 8614
+LAYER via2 ....... TOTAL Original Geometry Count = 3166
+LAYER metal3 ..... TOTAL Original Geometry Count = 5439
+LAYER via3 ....... TOTAL Original Geometry Count = 1578
+LAYER metal4 ..... TOTAL Original Geometry Count = 2931
+LAYER via4 ....... TOTAL Original Geometry Count = 1252
+LAYER metal5 ..... TOTAL Original Geometry Count = 2420
+LAYER via5 ....... TOTAL Original Geometry Count = 1194
+LAYER metal6 ..... TOTAL Original Geometry Count = 2148
+LAYER via6 ....... TOTAL Original Geometry Count = 1600
+LAYER metal7 ..... TOTAL Original Geometry Count = 1994
+LAYER via7 ....... TOTAL Original Geometry Count = 1696
+LAYER metal8 ..... TOTAL Original Geometry Count = 1864
+LAYER via8 ....... TOTAL Original Geometry Count = 1484
+LAYER metal9 ..... TOTAL Original Geometry Count = 1466
+LAYER via9 ....... TOTAL Original Geometry Count = 0
+LAYER metal10 .... TOTAL Original Geometry Count = 660
+LAYER contact .... TOTAL Original Geometry Count = 0
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              0
+TOTAL REAL Time:                             0
+TOTAL Original Layer Geometries:             51381
