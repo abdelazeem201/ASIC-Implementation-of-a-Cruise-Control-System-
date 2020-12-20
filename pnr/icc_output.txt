@@ -1,0 +1,66 @@
+Initializing gui preferences from file  /home/ahesham/.synopsys_icc_prefs.tcl
+icc_shell> set design cruisecontrol
+cruisecontrol
+icc_shell> 
+icc_shell> set sc_dir "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12"
+/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12
+icc_shell> 
+icc_shell> set_app_var search_path "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM  /home/mohamed/Desktop/johnson/rtl"
+/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM  /home/mohamed/Desktop/johnson/rtl
+icc_shell> 
+icc_shell> set_app_var link_library "* NangateOpenCellLibrary_ss0p95vn40c.db"
+* NangateOpenCellLibrary_ss0p95vn40c.db
+icc_shell> set_app_var target_library "NangateOpenCellLibrary_ss0p95vn40c.db"
+NangateOpenCellLibrary_ss0p95vn40c.db
+icc_shell> 
+icc_shell> 
+icc_shell> set tlupmax "$sc_dir/tech/rcxt/FreePDK45_10m_Cmax.tlup"
+/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/tech/rcxt/FreePDK45_10m_Cmax.tlup
+icc_shell> set tlupmin "$sc_dir/tech/rcxt/FreePDK45_10m_Cmin.tlup"
+/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/tech/rcxt/FreePDK45_10m_Cmin.tlup
+icc_shell> set tech2itf "$sc_dir/tech/rcxt/FreePDK45_10m.map"
+/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/tech/rcxt/FreePDK45_10m.map
+icc_shell> 
+icc_shell> set_tlu_plus_files -max_tluplus $tlupmax                    -min_tluplus $tlupmin         -tech2itf_map $tech2itf
+1
+icc_shell> open_mw_lib cruisecontrol
+{cruisecontrol}
+icc_shell> open_mw_cel cruisecontrol_6_routed
+Warning: Conflict unit found: MW tech file resistance unit is kOhm; Main Library resistance unit is MOhm. (IFS-007)
+Information: Opened "cruisecontrol_6_routed.CEL;1" from "/home/ahesham/Desktop/Abdelazeem/Design-and-Implementation-of-a-Cruise-Control-System/pnr/cruisecontrol" library. (MWUI-068)
+{cruisecontrol_6_routed}
+icc_shell> 
+icc_shell> 
+icc_shell> source  ../syn/cons/cons.tcl
+Loading db file '/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db'
+Loading db file '/usr/synopsys/IC_Compiler/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/IC_Compiler/libraries/syn/standard.sldb'
+Information: linking reference library : /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Back_End/mdb. (PSYN-878)
+Warning: Could not find a valid driver for the hierarchical Power net 'VDD'. (MWDC-285)
+Warning: Could not find a valid driver for the hierarchical Ground net 'VSS'. (MWDC-285)
+Information: Loading local_link_library attribute {NangateOpenCellLibrary_ss0p95vn40c.db}. (MWDC-290)
+
+  Linking design 'cruisecontrol'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3 designs)               cruisecontrol_6_routed.CEL, etc
+  NangateOpenCellLibrary_ss0p95vn40c (library) /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db
+
+Load global CTS reference options from NID to stack
+# GUI Debug: Building dc from empty. -- Time: 188ms
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Floorplan loading succeeded.
+1
+icc_shell> set_propagated_clock [get_clocks clk]
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+1
+icc_shell> 
+icc_shell> 
+icc_shell> exit
+
+Memory usage for main task 233 Mbytes.
+Memory usage for this session 233 Mbytes.
+CPU usage for this session 2 seconds ( 0.00 hours ).
+
+Thank you...
+
