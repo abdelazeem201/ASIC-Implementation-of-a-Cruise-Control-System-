@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : cruisecontrol
+Version: G-2012.06-SP2
+Date   : Wed Dec 20 06:01:51 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                           26
+Number of nets:                           269
+Number of cells:                          227
+Number of combinational cells:            205
+Number of sequential cells:                20
+Number of macros:                           0
+Number of buf/inv:                         32
+Number of references:                      24
+
+Combinational area:        252.168002
+Buf/Inv area:               18.088000
+Noncombinational area:      90.439997
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           342.607999
+Total area:                 undefined
+1

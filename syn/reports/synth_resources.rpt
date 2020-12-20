@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : resources
+Design : cruisecontrol
+Version: G-2012.06-SP2
+Date   : Wed Dec 20 06:01:51 2017
+****************************************
+
+Resource Sharing Report for design cruisecontrol in file
+        ../rtl/cruisecontrol.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r113     | DW01_inc     | width=8    |               | add_119 add_130      |
+|          |              |            |               | add_141 add_150      |
+|          |              |            |               | add_72 add_77 add_89 |
+|          |              |            |               | add_94               |
+| r115     | DW01_dec     | width=8    |               | sub_112 sub_125      |
+|          |              |            |               | sub_137 sub_166      |
+|          |              |            |               | sub_84 sub_99        |
+| r116     | DW01_sub     | width=8    |               | sub_104 sub_156      |
+| r119     | DW01_cmp6    | width=8    |               | gt_135 lt_139 lt_148 |
+| r124     | DW01_cmp2    | width=8    |               | gt_74                |
+| r126     | DW01_inc     | width=8    |               | add_118              |
+| r128     | DW01_dec     | width=8    |               | sub_124              |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| r113               | DW01_inc         | rpl                |                |
+| add_118            | DW01_inc         | rpl                |                |
+===============================================================================
+
+
+No multiplexors to report
+1

@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : cruisecontrol
+Version: G-2012.06-SP2
+Date   : Wed Dec 20 06:01:51 2017
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              12.00
+  Critical Path Length:          0.54
+  Critical Path Slack:           1.07
+  Critical Path Clk Period:      4.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.26
+  Total Hold Violation:         -4.57
+  No. of Hold Violations:       20.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          2
+  Hierarchical Port Count:         32
+  Leaf Cell Count:                241
+  Buf/Inv Cell Count:              34
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       221
+  Sequential Cell Count:           20
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      252.168002
+  Noncombinational Area:    90.439997
+  Buf/Inv Area:             18.088000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               342.607999
+  Design Area:             342.607999
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           281
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 192.168.64.136
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.15
+  Logic Optimization:                  0.08
+  Mapping Optimization:                0.14
+  -----------------------------------------
+  Overall Compile Time:                0.83
+  Overall Compile Wall Clock Time:     1.06
+
+1
