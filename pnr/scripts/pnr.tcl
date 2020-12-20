@@ -575,7 +575,7 @@ write_verilog -pg -no_physical_only_cells ./output/${design}_icc.v
 write_verilog -no_physical_only_cells ./output/${design}_icc_nopg.v
 
 extract_rc
-write_parasitics -output {./output/mips_16.spef}
+write_parasitics -output {./output/${design}.spef}
 
 
 close_mw_cel
