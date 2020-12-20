@@ -1,0 +1,15 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-nworst 40
+	-slack_lesser_than 0.0000
+	-max_paths 40
+Design : cruisecontrol
+Version: G-2012.06-SP2
+Date   : Wed Dec 20 08:26:09 2017
+****************************************
+
+No constrained paths.
+
+1

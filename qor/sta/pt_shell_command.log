@@ -1,0 +1,112 @@
+#@ # 
+#@ # Running pt_shell Version G-2012.06-SP2 for amd64 -- Aug 30, 2012
+#@ # Date:   Wed Dec 20 08:25:13 2017
+#@ # Run by: ahesham@192.168.64.136
+#@ 
+
+source /usr/synopsys/PrimeTime/admin/setup/.synopsys_pt.setup
+#@ # -- Starting source /usr/synopsys/PrimeTime/admin/setup/.synopsys_pt.setup
+
+#@ #
+#@ # .synopsys_pt.setup: Initialization File for PrimeTime
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparcOS5" || $sh_arch == "hpux10" ||      $sh_arch == "hp32" || $sh_arch == "linux" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you use new variable message
+#@ # tracing for debugging purposes only.
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ alias report_constraints	report_constraint
+#@ alias report_clocks		report_clock
+#@ 
+#@ #
+#@ # The alias for get_clock was added when get_clock_network_objects
+#@ # was introduced, as it conflicts with get_clocks (and get_clock is a
+#@ # typical abbreviation for get_clocks)
+#@ #
+#@ alias get_clock get_clocks
+#@ 
+#@ 
+#@ #
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ 
+#@ # -- End source /usr/synopsys/PrimeTime/admin/setup/.synopsys_pt.setup
+
+set link_path  "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db"
+read_verilog "../../../pnr/output/cruisecontrol_icc.v"
+current_design cruisecontrol
+source ../../../syn/cons/cons.tcl
+#@ # -- Starting source ../../../syn/cons/cons.tcl
+
+#@ create_clock -name clk -period 4 -waveform {0 2} [get_ports clk]
+#@ set_input_delay -max 2 -clock [get_clocks clk] [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_output_delay -max 2 -clock [get_clocks clk] [all_outputs]
+#@ set_clock_uncertainty 0.35 [get_clocks]
+#@ set_false_path -hold -from [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_false_path -hold -to [all_outputs]
+#@ 
+#@ # -- End source ../../../syn/cons/cons.tcl
+
+#read_parasitics ../../rcxt/cmax/cruisecontrol_cmax_tm40.spef
+read_parasitics ../../../pnr/output/cruisecontrol.spef.max
+update_timing
+save_session cruisecontrol_max.session
+report_constraint -all_violators -significant_digits 4 > ./cruisecontrol.max_constr.rpt
+report_timing -delay_type max -nworst 40 -significant_digits 4 > ./cruisecontrol_timing.rpt
+write_sdf ./cruisecontrol.max.sdf
+set link_path  "/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ff1p25v0c.db"
+read_verilog "../../../pnr/output/cruisecontrol_icc.v"
+current_design cruisecontrol
+link
+source ../../../syn/cons/cons.tcl
+#@ # -- Starting source ../../../syn/cons/cons.tcl
+
+#@ create_clock -name clk -period 4 -waveform {0 2} [get_ports clk]
+#@ set_input_delay -max 2 -clock [get_clocks clk] [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_output_delay -max 2 -clock [get_clocks clk] [all_outputs]
+#@ set_clock_uncertainty 0.35 [get_clocks]
+#@ set_false_path -hold -from [remove_from_collection [all_inputs] [get_ports clk]]
+#@ set_false_path -hold -to [all_outputs]
+#@ 
+#@ # -- End source ../../../syn/cons/cons.tcl
+
+#read_parasitics ../../rcxt/cmin/cruisecontrol_cmin_t125.spef
+read_parasitics ../../../pnr/output/cruisecontrol.spef.min
+update_timing
+save_session cruisecontrol_min.session
+report_constraint -all_violators -significant_digits 4 > ./cruisecontrol.min_constr.rpt
+report_timing -delay_type min -nworst 40 -significant_digits 4 > ./cruisecontrol.min_timing.rpt
+write_sdf ./cruisecontrol.min.sdf
+exit
