@@ -1,0 +1,7 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/ahesham/Desktop/Abdelazeem/Design-and-Implementation-of-a-Cruise-Control-System/pvr/lvs
+lvs_LvsfVersion 1
+lvs_LvsOutFile LVS_REPORT lvs.rep
+lvs_LvsOutFile SOURCE_NETLIST ./spice/cruisecontrol.sp
+lvs_LvsOutFile RULES_FILE calibreLVS.rul
+lvs_LvsRunTimes 1513788833 1513788833
