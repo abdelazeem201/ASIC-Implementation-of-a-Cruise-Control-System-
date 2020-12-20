@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/cruisecontrol.dv
+dv_start notcompared
+dv_cell {cruisecontrol} {cruisecontrol} notcompared
+dv_obj_count -transformed_nets {26 636} -transformed_inst {0 756} -transformed_port {26 28}
+dv_end
