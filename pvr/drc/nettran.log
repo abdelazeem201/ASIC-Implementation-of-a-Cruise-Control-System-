@@ -1,0 +1,11 @@
+/* NetTran: AMD.64 Release B-2008.09.SP5.26004 2012/07/19 */ 
+/* Created:  12/20/2017   8:48   */
+NetTran - Netlist Translator (R), AMD.64 Release B-2008.09.SP5.26004 2012/07/19
+
+  (C) Copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+                2006, 2007, 2008, 2009, 2010, 2011, 2012.
+  Synopsys, Inc.  All rights reserved.
+
+Options: -rootCell cruisecontrol -verilog-b0 VSS -verilog-b1 VDD -sp /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Back_End/spice/NangateOpenCellLibrary.spi -verilog ../../../pnr/output/cruisecontrol_icc.v -outType spice -outName cruisecontrl.sp 
+
+FATAL: No read access to netlist "../../../pnr/output/cruisecontrol_icc.v".
